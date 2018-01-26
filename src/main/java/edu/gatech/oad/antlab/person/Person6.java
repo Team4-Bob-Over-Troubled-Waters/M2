@@ -33,11 +33,11 @@ public class Person6 {
 	  //Person 5 put your implementation here
 	  String output = "";
 	  for (int i = 2; i < input.length(); i++) {
-	  	output += input[i];
+	  	output += input.charAt(i);
 	  }
 	  int i = 0;
 	  while (i < 2 && i < input.length()) {
-	  	output += input[i];
+	  	output += input.charAt(i);
 	  	i++;
 	  }
 	  return null;
