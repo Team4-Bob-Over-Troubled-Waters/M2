@@ -30,8 +30,19 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+	Object array[] = input.toCharArray();
+	for (int i = 0; i < array.length; i++) {
+	    try {
+		int num = String.parseInt(array[i]);
+		num++;
+		array[i] = Integer.toChar(num);
+	    }
+	    catch (exception e) {
+		array[i] = array[i] = 1;
+	    }
+	    
+	}
+	return array;
     }
     
     /**
@@ -43,8 +54,11 @@ public class Person4 {
      *         object
      */
     public String toString(String input) {
-      return name + calc(input);
+        return name + calc(input);
     }
 
 }
+
+
+
 
