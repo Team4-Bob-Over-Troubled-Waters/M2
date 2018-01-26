@@ -32,18 +32,18 @@ public class Person4 {
      * @return the modified string
      */
     private static String calc(String input) {
-	char charArray[] = input.toCharArray();
-	for (int i = 0; i < charArray.length; i++) {
-	    if (Character.isDigit(charArray[i])) {
-		int num = Character.getNumericValue(charArray[i]);
-		num++;
-		num += 48; // 48 places forward in ASCI table is digits 0-9
-		charArray[i] = (char) num;
-	    } else {
-		charArray[i]++;
-	    }
-	}
-	return new String(charArray);
+      char charArray[] = input.toCharArray();
+      for (int i = 0; i < charArray.length; i++) {
+          if (Character.isDigit(charArray[i])) {
+              int num = Character.getNumericValue(charArray[i]);
+              num++;
+              num += 48; // 48 places forward in ASCI table is digits 0-9
+              charArray[i] = (char) num;
+          } else {
+              charArray[i]++;
+          }
+      }
+      return new String(charArray);
     }
     
     /**
