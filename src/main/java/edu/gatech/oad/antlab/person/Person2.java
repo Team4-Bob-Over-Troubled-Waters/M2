@@ -30,12 +30,17 @@ public class Person2 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  List<String> letters = Arrays.asList(string.split(""));
-      Collections.shuffle(letters);
-      String shuffled = "";
-      for (String letter : letters) {
-      shuffled += letter;
-      }
+	  String shuffledString = "";
+
+        while (s.length() != 0)
+        {
+            int index = (int) Math.floor(Math.random() * s.length());
+            char c = s.charAt(index);
+            s = s.substring(0,index)+s.substring(index+1);
+            shuffledString += c;
+        }
+
+    }
 	  return null;
 	}
 	/**
