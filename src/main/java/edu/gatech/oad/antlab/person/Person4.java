@@ -34,11 +34,13 @@ public class Person4 {
 	for (int i = 0; i < array.length; i++) {
 	    try {
 		int num = String.parseInt(array[i]);
-		array[i] = num + 1;
+		num++;
+		array[i] = Integer.toChar(num);
 	    }
 	    catch (exception e) {
 		array[i] = array[i] = 1;
 	    }
+	    
 	}
 	return array;
     }
