@@ -1,4 +1,6 @@
-package edu.gatech.oad.antlab.person;
+//package edu.gatech.oad.antlab.person;
+
+import java.util.Arrays;
 
 /**
  *  A simple class for person 4
@@ -29,9 +31,19 @@ public class Person4 {
      * @param input the string to be modified
      * @return the modified string
      */
-    private String calc(String input) {
-      //Person 4 put your implementation here
-      return null;
+    private static String calc(String input) {
+      char charArray[] = input.toCharArray();
+      for (int i = 0; i < charArray.length; i++) {
+          if (Character.isDigit(charArray[i])) {
+              int num = Character.getNumericValue(charArray[i]);
+              num++;
+              num += 48; // 48 places forward in ASCI table is digits 0-9
+              charArray[i] = (char) num;
+          } else {
+              charArray[i]++;
+          }
+      }
+      return new String(charArray);
     }
     
     /**
@@ -43,8 +55,18 @@ public class Person4 {
      *         object
      */
     public String toString(String input) {
-      return name + calc(input);
+        return name + calc(input);
     }
 
 }
+
+
+
+
+
+
+
+
+
+
 
