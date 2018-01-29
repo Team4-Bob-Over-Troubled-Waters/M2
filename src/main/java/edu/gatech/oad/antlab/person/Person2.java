@@ -29,7 +29,7 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
+	private String calc(String s) {
 	  String shuffledString = "";
 
         while (s.length() != 0)
@@ -40,9 +40,8 @@ public class Person2 {
             shuffledString += c;
         }
 
-    }
 	  return null;
-	}
+    }
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
