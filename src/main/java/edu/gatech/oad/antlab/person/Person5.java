@@ -30,11 +30,10 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  length = input.length();
-	  shift = 2;
-	  int offset = ((shift % length) + length) % length;
+	  int length = input.length();
+	  int shift = 2;
 
-	  return input.substring(offset, length) + input.substring(0, offset);
+	  return input.substring(shift, length) + input.substring(0, shift);
 	}
 	
 	/**
