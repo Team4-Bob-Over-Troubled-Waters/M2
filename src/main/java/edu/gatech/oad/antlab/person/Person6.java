@@ -40,7 +40,7 @@ public class Person6 {
 	  	output += input.charAt(i);
 	  	i++;
 	  }
-	  return null;
+	  return output;
 	}
 	
 	/**
