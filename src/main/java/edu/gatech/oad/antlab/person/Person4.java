@@ -37,7 +37,7 @@ public class Person4 {
           if (Character.isDigit(charArray[i])) {
               int num = Character.getNumericValue(charArray[i]);
               num++;
-              num += 48; // 48 places forward in ASCI table is digits 0-9
+              num += 48; // 48 places forward in ASCII table is digits 0-9
               charArray[i] = (char) num;
           } else {
               charArray[i]++;
