@@ -1,3 +1,3 @@
-This is Person 5: You Hsin Lo
+This is Person 5: Yu Hsin Lo
 ylo39@gatech.edu
 
