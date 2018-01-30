@@ -40,7 +40,7 @@ public class Person2 {
             shuffledString += c;
         }
 
-	  return null;
+	  return shuffledString;
     }
 	/**
 	 * Return a string rep of this object
